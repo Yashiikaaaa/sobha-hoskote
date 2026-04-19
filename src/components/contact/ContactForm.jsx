@@ -251,11 +251,11 @@ const ContactForm = ({ contactmodal, setContactModal, leadSource }) => {
             </div>
 
             <a
-              href="tel:+918919456501"
+              href="tel:+919353329893"
               className="text-white p-2 w-full bg-PrestigeBrown text-center"
             >
               <Phone className="inline mr-2" />
-              89194 56501
+              93533 29893
             </a>
           </div>
         </div>
