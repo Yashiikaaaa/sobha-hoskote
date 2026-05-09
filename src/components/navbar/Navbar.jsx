@@ -21,25 +21,25 @@ export const Banner = ({ setContactModal }) => {
     };
   }, []);
 
-  return (
-    (isBannerVisible) && (
-      <div className="w-screen bg-black text-white text-center p-[10px] flex justify-center items-center gap-[16px] max-h-[40px] z-30">
-        <span className={`font-sans font-semibold ${isMobile ? "text-[14px] leading-[14px]" : "text-[18px] leading-[17.63px]"}`}>
-          Exclusive Pre-launch price and offers{" "}
-        </span>
-        <div className="flex items-center justify-center gap-[4px] cursor-pointer" onClick={() => setContactModal(true)}>
-          <span className={`font-sans font-semibold ${isMobile ? "text-[14px] leading-[14px]" : "text-[18px] leading-[17.63px]"} hover:underline hover:decoration-white`}>Get it now</span>
-          <img src={arrow} alt=""  className="w-5 h-4"/>
-        </div>
-        <button
-          className={`absolute ${isMobile ? "right-2 hidden" : "right-4"} text-white`}
-          onClick={() => setIsBannerVisible(false)}
-        >
-          <Xmark className="w-5 " />
-        </button>
-      </div>
-    )
-  );
+  // return (
+  //   (isBannerVisible) && (
+  //     <div className="w-screen bg-black text-white text-center p-[10px] flex justify-center items-center gap-[16px] max-h-[40px] z-30">
+  //       <span className={`font-sans font-semibold ${isMobile ? "text-[14px] leading-[14px]" : "text-[18px] leading-[17.63px]"}`}>
+  //         Exclusive Pre-launch price and offers{" "}
+  //       </span>
+  //       <div className="flex items-center justify-center gap-[4px] cursor-pointer" onClick={() => setContactModal(true)}>
+  //         <span className={`font-sans font-semibold ${isMobile ? "text-[14px] leading-[14px]" : "text-[18px] leading-[17.63px]"} hover:underline hover:decoration-white`}>Get it now</span>
+  //         <img src={arrow} alt=""  className="w-5 h-4"/>
+  //       </div>
+  //       <button
+  //         className={`absolute ${isMobile ? "right-2 hidden" : "right-4"} text-white`}
+  //         onClick={() => setIsBannerVisible(false)}
+  //       >
+  //         <Xmark className="w-5 " />
+  //       </button>
+  //     </div>
+  //   )
+  // );
 };
 
 // Navbar component
