@@ -34,32 +34,40 @@ const Pricing = ({ openContactModal, formSubmitted }) => {
     // },
     { 
       type: "1 BHK", 
-      price: "₹ 3.25 Cr ++", 
-      size: "2,400 Sq.ft.", 
+      price: "₹ 1.09 Cr ++", 
+      size: "740 Sq.ft.", 
       image: bhk2,
       leadSource: LEAD_SOURCES.PRICING_3BHK, // or appropriate lead source
       propertyType: PROPERTY_TYPES.BHK3
     },
     { 
       type: "2 BHK", 
-      price: "₹ 3.25 Cr ++", 
-      size: "2,400 Sq.ft.", 
+      price: "₹ 1.5 Cr ++", 
+      size: "1,070 Sq.ft.", 
+      image: bhk1,
+      leadSource: LEAD_SOURCES.PRICING_3BHK, // or appropriate lead source
+      propertyType: PROPERTY_TYPES.BHK3
+    },
+     { 
+      type: "2 BHK Grande", 
+      price: "₹ 1.7 Cr ++", 
+      size: "1,200 Sq.ft.", 
       image: bhk1,
       leadSource: LEAD_SOURCES.PRICING_3BHK, // or appropriate lead source
       propertyType: PROPERTY_TYPES.BHK3
     },
     { 
-      type: "3 BHK", 
-      price: "₹ 3.25 Cr ++", 
-      size: "2,400 Sq.ft.", 
+      type: "3 BHK Grande", 
+      price: "₹ 2.7 Cr ++", 
+      size: "1,825 Sq.ft.", 
       image: bhk4,
       leadSource: LEAD_SOURCES.PRICING_3BHK, // or appropriate lead source
       propertyType: PROPERTY_TYPES.BHK3
     },
     { 
       type: "4 BHK", 
-      price: "₹ 3.25 Cr ++", 
-      size: "2,400 Sq.ft.", 
+      price: "₹ 3.6 Cr ++", 
+      size: "2,425 Sq.ft.", 
       image: bhk3,
       leadSource: LEAD_SOURCES.PRICING_3BHK, // or appropriate lead source
       propertyType: PROPERTY_TYPES.BHK3
@@ -97,13 +105,13 @@ const Pricing = ({ openContactModal, formSubmitted }) => {
               <div className="max-w-md relative text-black">
                 <div className="text-xl pt-4 flex items-center font-normal">
                   <span className="text-lg md:text-xl">&bull;</span>{" "}
-                  <span className={`text-lg md:text-xl ${!isUnlocked ? "blur-md" : ""}`}>
-                    Starting at: {property.price}
+                  <span className={`text-lg md:text-xl ${!isUnlocked ? "" : ""}`}>
+                 {property.price}
                   </span>
                 </div>
                 <div className="text-xl pt-4 flex items-center font-normal">
                   <span className="text-lg md:text-xl">&bull;</span>
-                  <span className={`text-lg md:text-xl ${!isUnlocked ? "blur-md" : ""}`}>
+                  <span className={`text-lg md:text-xl ${!isUnlocked ? "" : ""}`}>
                     Size: {property.size}
                   </span>
                 </div>
